@@ -134,7 +134,8 @@ table {
 * {
 	box-sizing: border-box;
 	max-width: 100%;
-	border: 1px solid grey;
+	/* border: 1px solid grey; */
+	background-color: paleturquoise;
 }
 
 html {
@@ -175,10 +176,10 @@ section {
 /* End general styling */
 
 /* Begin Header Styling */
-/* .head {
+#head {
 	display: flex;
-} */
-.head {
+}
+#head {
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
 	width: 100%;
 	background-repeat: repeat;
@@ -316,7 +317,6 @@ footer nav {
 	padding: 1rem 1rem;
 	margin: 1rem 1rem;
 	background-color: darkslategrey;
-	border: 3px solid red;
 }
 .aboutText {
 	color: goldenrod;
@@ -329,3 +329,28 @@ footer {
 }
 
 /* BEGIN MEDIA QUERIES */
+
+@media (max-width: 800px) {
+	.headAbout {
+		display: flex;
+		flex-flow: column;
+	}
+	.top -nav {
+		background-color: yellow;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutPics {
+		text-align: center;
+		width: 100%;
+		padding: 1rem 1rem;
+		margin: 1rem 1rem;
+		background-color: darkslategrey;
+	}
+	.pic {
+		display: flex;
+		flex-flow: column wrap;
+	}
+}
