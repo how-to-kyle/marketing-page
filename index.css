@@ -170,6 +170,7 @@ section {
 .container {
 	max-width: 800px;
 	margin: auto;
+	background-color: tan;
 }
 /* End general styling */
 
@@ -231,12 +232,13 @@ a {
 	display: flex;
 	color: indigo;
 	background-color: slategray;
-	width: 40%%;
+	width: 40%;
 	margin: 2%;
 	padding: 2%;
 	display: flex;
 	flex-flow: column;
 }
+
 .image-container {
 	display: flex;
 	justify-content: flex-end;
@@ -280,21 +282,37 @@ footer nav {
 
 /* BEGIN ABOUT PAGE STYLING */
 
+/* About Header */
 .headAbout {
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
 	width: 100%;
 	background-repeat: repeat;
 }
+.top-nav {
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+	width: 100%;
+}
+
+/* About Main Content */
 .h1 {
 	font-size: 6rem;
 	text-align: center;
 }
+
 .main content about {
 	display: flex;
 	width: 30%;
 }
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 .aboutPics {
-	width: 30%;
+	text-align: center;
+	width: 40%;
 	padding: 1rem 1rem;
 	margin: 1rem 1rem;
 	background-color: darkslategrey;
@@ -305,6 +323,9 @@ footer nav {
 	font-size: 2rem;
 }
 
+/* About Footer */
 footer {
 	background-color: rgb(14, 120, 212);
 }
+
+/* BEGIN MEDIA QUERIES */
