@@ -135,7 +135,7 @@ table {
 	box-sizing: border-box;
 	max-width: 100%;
 	/* border: 1px solid grey; */
-	background-color: paleturquoise;
+	background-color: rgb(131, 131, 131);
 }
 
 html {
@@ -161,7 +161,7 @@ h6 {
 a {
 	text-decoration: none;
 	color: #212120;
-	background-color: gray;
+	background-color: rgb(227, 236, 245);
 	font-size: 2rem;
 }
 
@@ -171,7 +171,7 @@ section {
 .container {
 	max-width: 800px;
 	margin: auto;
-	background-color: tan;
+	background-color: rgb(122, 118, 113);
 }
 /* End general styling */
 
@@ -186,7 +186,7 @@ section {
 }
 .nav {
 	display: flex;
-	padding: 2%;
+	padding: 0.5%;
 	width: 100%;
 }
 
@@ -198,7 +198,7 @@ a {
 nav a {
 	color: black;
 	background-color: slategrey;
-	margin: 2%;
+	margin: 1%;
 	text-align: center;
 }
 
@@ -259,9 +259,10 @@ h2 {
 .pic {
 	width: 33%;
 	height: auto;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 1rem;
 }
+
 .pic-text {
 	display: flex;
 	justify-content: center;
@@ -269,6 +270,9 @@ h2 {
 	margin: 0 2%;
 }
 
+button:hover {
+	background-color: palevioletred;
+}
 /* Begin Footer Styling */
 footer {
 	display: flex;
@@ -297,10 +301,10 @@ footer nav {
 }
 
 /* About Main Content */
-.h1 {
+/* .h1 {
 	font-size: 6rem;
 	text-align: center;
-}
+} */
 
 .main content about {
 	display: flex;
