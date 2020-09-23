@@ -134,8 +134,10 @@ table {
 * {
 	box-sizing: border-box;
 	max-width: 100%;
+
 	/* border: 1px solid grey; */
 	background-color: rgb(131, 131, 131);
+
 }
 
 html {
@@ -161,7 +163,9 @@ h6 {
 a {
 	text-decoration: none;
 	color: #212120;
+
 	background-color: rgb(227, 236, 245);
+
 	font-size: 2rem;
 }
 
@@ -169,24 +173,30 @@ section {
 	padding: 4% 0;
 }
 .container {
+
 	max-width: 800px;
 	margin: auto;
 	background-color: rgb(122, 118, 113);
+
 }
 /* End general styling */
 
 /* Begin Header Styling */
+
 #head {
 	display: flex;
 }
 #head {
+
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
 	width: 100%;
 	background-repeat: repeat;
 }
 .nav {
 	display: flex;
+
 	padding: 0.5%;
+
 	width: 100%;
 }
 
@@ -196,10 +206,12 @@ a {
 	margin: 0% auto;
 }
 nav a {
+
 	color: black;
 	background-color: slategrey;
 	margin: 1%;
 	text-align: center;
+
 }
 
 /* Begin Top-Content Styling */
@@ -211,11 +223,13 @@ nav a {
 	justify-content: center;
 	margin-top: 2%;
 }
+
 .top-text {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 	/* color: blue; */
+
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin: 2% 0;
@@ -224,12 +238,16 @@ nav a {
 
 .middle-content {
 	display: flex;
+
 	flex-direction: row;
+
+
 	justify-content: flex-end;
 }
 
 .links,
 a {
+
 	display: flex;
 	color: indigo;
 	background-color: slategray;
@@ -240,6 +258,7 @@ a {
 	flex-flow: column;
 }
 
+
 .image-container {
 	display: flex;
 	justify-content: flex-end;
@@ -248,8 +267,10 @@ a {
 h2 {
 	text-align: center;
 	font-size: 4rem;
+
 	color: indigo;
 	background-color: slategrey;
+
 }
 
 #main-content {
@@ -258,6 +279,7 @@ h2 {
 }
 .pic {
 	width: 33%;
+
 	height: auto;
 	justify-content: space-between;
 	padding: 1rem;
@@ -266,9 +288,11 @@ h2 {
 .pic-text {
 	display: flex;
 	justify-content: center;
+
 	padding: 0 6%;
 	margin: 0 2%;
 }
+
 
 button:hover {
 	background-color: palevioletred;
@@ -280,10 +304,12 @@ footer {
 }
 
 footer nav {
+
 	display: flex;
 	padding: 2%;
 	width: 100%;
 }
+
 
 /* BEGIN ABOUT PAGE STYLING */
 
@@ -358,3 +384,4 @@ footer {
 		flex-flow: column wrap;
 	}
 }
+
