@@ -134,7 +134,10 @@ table {
 * {
 	box-sizing: border-box;
 	max-width: 100%;
-	border: 1px solid grey;
+
+	/* border: 1px solid grey; */
+	background-color: rgb(131, 131, 131);
+
 }
 
 html {
@@ -160,7 +163,9 @@ h6 {
 a {
 	text-decoration: none;
 	color: #212120;
-	background-color: blue;
+
+	background-color: rgb(227, 236, 245);
+
 	font-size: 2rem;
 }
 
@@ -168,23 +173,30 @@ section {
 	padding: 4% 0;
 }
 .container {
-	width: auto;
-	margin: 0 auto;
+
+	max-width: 800px;
+	margin: auto;
+	background-color: rgb(122, 118, 113);
+
 }
 /* End general styling */
 
 /* Begin Header Styling */
-.head {
+
+#head {
 	display: flex;
 }
-.head {
+#head {
+
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
 	width: 100%;
 	background-repeat: repeat;
 }
 .nav {
 	display: flex;
-	padding: 2%;
+
+	padding: 0.5%;
+
 	width: 100%;
 }
 
@@ -194,9 +206,12 @@ a {
 	margin: 0% auto;
 }
 nav a {
-	color: white;
-	background-color: blue;
-	margin: 2%;
+
+	color: black;
+	background-color: slategrey;
+	margin: 1%;
+	text-align: center;
+
 }
 
 /* Begin Top-Content Styling */
@@ -208,11 +223,13 @@ nav a {
 	justify-content: center;
 	margin-top: 2%;
 }
-.top-text a {
+
+.top-text {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	color: white;
+	/* color: blue; */
+
 	padding-top: 2%;
 	padding-bottom: 2%;
 	margin: 2% 0;
@@ -221,18 +238,27 @@ nav a {
 
 .middle-content {
 	display: flex;
-	flex-direction: column;
+
+	flex-direction: row;
+
+
 	justify-content: flex-end;
 }
 
 .links,
 a {
-	color: white;
-	width: 25%;
-	margin: 2%;
+
 	display: flex;
-	flex-flow: column wrap;
+	color: indigo;
+	background-color: slategray;
+	width: 40%;
+	margin: 2%;
+	padding: 2%;
+	display: flex;
+	flex-flow: column;
 }
+
+
 .image-container {
 	display: flex;
 	justify-content: flex-end;
@@ -241,6 +267,10 @@ a {
 h2 {
 	text-align: center;
 	font-size: 4rem;
+
+	color: indigo;
+	background-color: slategrey;
+
 }
 
 #main-content {
@@ -249,30 +279,109 @@ h2 {
 }
 .pic {
 	width: 33%;
-	justify-content: center;
+
+	height: auto;
+	justify-content: space-between;
+	padding: 1rem;
 }
+
 .pic-text {
 	display: flex;
+	justify-content: center;
+
 	padding: 0 6%;
 	margin: 0 2%;
 }
 
+
+button:hover {
+	background-color: palevioletred;
+}
 /* Begin Footer Styling */
-.footer {
+footer {
 	display: flex;
+	justify-content: center;
 }
 
-.footer,
-nav {
+footer nav {
+
 	display: flex;
 	padding: 2%;
 	width: 100%;
 }
 
 
+/* BEGIN ABOUT PAGE STYLING */
+
+/* About Header */
+.headAbout {
+	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
+	width: 100%;
+	background-repeat: repeat;
 }
-nav a {
-	color: white;
-	background-color: blue;
-	margin: 2%;
+.top-nav {
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+	width: 100%;
+}
+
+/* About Main Content */
+/* .h1 {
+	font-size: 6rem;
+	text-align: center;
 } */
+
+.main content about {
+	display: flex;
+	width: 30%;
+}
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.aboutPics {
+	text-align: center;
+	width: 40%;
+	padding: 1rem 1rem;
+	margin: 1rem 1rem;
+	background-color: darkslategrey;
+}
+.aboutText {
+	color: goldenrod;
+	font-size: 2rem;
+}
+
+/* About Footer */
+footer {
+	background-color: rgb(14, 120, 212);
+}
+
+/* BEGIN MEDIA QUERIES */
+
+@media (max-width: 800px) {
+	.headAbout {
+		display: flex;
+		flex-flow: column;
+	}
+	.top -nav {
+		background-color: yellow;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutPics {
+		text-align: center;
+		width: 100%;
+		padding: 1rem 1rem;
+		margin: 1rem 1rem;
+		background-color: darkslategrey;
+	}
+	.pic {
+		display: flex;
+		flex-flow: column wrap;
+	}
+}
+
