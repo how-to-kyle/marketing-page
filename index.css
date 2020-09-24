@@ -87,7 +87,7 @@ audio,
 video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -195,7 +195,8 @@ section {
 .nav {
 	display: flex;
 
-	padding: 0.5%;
+	padding: 2%;
+
 
 	width: 100%;
 }
@@ -213,8 +214,8 @@ nav a {
 	text-align: center;
 
 }
-
 /* Begin Top-Content Styling */
+
 
 #top-container {
 	background-image: url(https://images.unsplash.com/photo-1533659124865-d6072dc035e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
@@ -222,13 +223,13 @@ nav a {
 	display: flex;
 	justify-content: center;
 	margin-top: 2%;
+	width: 100%;
 }
 
 .top-text {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	/* color: blue; */
 
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -256,8 +257,11 @@ a {
 	padding: 2%;
 	display: flex;
 	flex-flow: column;
+	border: 1px solid black;
 }
-
+.links a:hover {
+	background-color: white;
+}
 
 .image-container {
 	display: flex;
@@ -291,12 +295,15 @@ h2 {
 
 	padding: 0 6%;
 	margin: 0 2%;
+	border: 1px solid black;
 }
 
 
-button:hover {
-	background-color: palevioletred;
+.pic-text:hover {
+	background-color: white;
+
 }
+
 /* Begin Footer Styling */
 footer {
 	display: flex;
@@ -327,10 +334,10 @@ footer nav {
 }
 
 /* About Main Content */
-/* .h1 {
+h1 {
 	font-size: 6rem;
 	text-align: center;
-} */
+}
 
 .main content about {
 	display: flex;
@@ -342,14 +349,14 @@ footer nav {
 	justify-content: center;
 }
 .aboutPics {
-	text-align: center;
+	text-align: flex-start;
 	width: 40%;
 	padding: 1rem 1rem;
 	margin: 1rem 1rem;
 	background-color: darkslategrey;
 }
 .aboutText {
-	color: goldenrod;
+	color: black;
 	font-size: 2rem;
 }
 
@@ -361,6 +368,26 @@ footer {
 /* BEGIN MEDIA QUERIES */
 
 @media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+	/* main page 500 */
+	head nav {
+		display: flex;
+		flex-direction: column;
+	}
+	.links,
+	a {
+		border: none;
+	}
+
+	#main-content {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	/* About page 500 */
 	.headAbout {
 		display: flex;
 		flex-flow: column;
