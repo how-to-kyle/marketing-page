@@ -178,12 +178,14 @@ section {
 /* Begin Header Styling */
 #head {
 	display: flex;
+	justify-content: space-around;
 }
-#nav-container nav {
+.nav-container {
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
-
-	/* max-width: 100%;
-	height: auto;
+	
+	display:flex;
+	 max-width: 100%;
+	/* height: auto;
 	background-repeat: repeat; */
 }
 .nav {
@@ -303,7 +305,7 @@ footer nav {
 .nav-container {
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
 
-	max-width: 100%;
+	width: 100%
 	height: auto;
 	background-repeat: repeat;
 }
