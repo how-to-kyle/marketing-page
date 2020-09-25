@@ -174,7 +174,8 @@ section {
 }
 .container {
 
-	max-width: 800px;
+	/* max-width: 800px; */
+
 	margin: auto;
 	background-color: rgb(122, 118, 113);
 
@@ -185,12 +186,17 @@ section {
 
 #head {
 	display: flex;
+	justify-content: space-around;
 }
-#head {
+
+.nav-container {
 
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
-	width: 100%;
-	background-repeat: repeat;
+	
+	display:flex;
+	 max-width: 100%;
+	/* height: auto;
+	background-repeat: repeat; */
 }
 .nav {
 	display: flex;
@@ -219,6 +225,7 @@ nav a {
 
 #top-container {
 	background-image: url(https://images.unsplash.com/photo-1533659124865-d6072dc035e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+
 	background-repeat: repeat;
 	display: flex;
 	justify-content: center;
@@ -265,7 +272,7 @@ a {
 
 .image-container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 }
 /* Begin Main-Content Styling */
 h2 {
@@ -280,13 +287,19 @@ h2 {
 #main-content {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
 }
+
 .pic {
-	width: 33%;
+
+	max-width: 50%;
+
 
 	height: auto;
-	justify-content: space-between;
 	padding: 1rem;
+	object-fit: contain;
+	/* border: 2px solid red; */
 }
 
 .pic-text {
@@ -295,14 +308,13 @@ h2 {
 
 	padding: 0 6%;
 	margin: 0 2%;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 
-.pic-text:hover {
+/* .pic-text:hover {
 	background-color: white;
-
-}
+ } */
 
 /* Begin Footer Styling */
 footer {
@@ -321,9 +333,11 @@ footer nav {
 /* BEGIN ABOUT PAGE STYLING */
 
 /* About Header */
-.headAbout {
+.nav-container {
 	background-image: url(https://media-exp1.licdn.com/dms/image/C4D12AQH7HkOmJHWgSg/article-cover_image-shrink_720_1280/0?e=1600905600&v=beta&t=HanFhxs6l8j4EJORM3-xnr7Y6BxUA_kdpotXqPg7f60);
-	width: 100%;
+
+	width: 100%
+	height: auto;
 	background-repeat: repeat;
 }
 .top-nav {
